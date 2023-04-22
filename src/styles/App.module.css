@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Gloock";
+  font-family: "Poltawski Nowy", serif;
   background: linear-gradient(-45deg, #ce9192, #9090f3, #bb83cd);
   background-size: 400% 400%;
   background-repeat: no-repeat;
@@ -37,6 +37,7 @@ body {
   width: 100vw;
   padding: 1rem;
   max-width: 1400px;
+  min-height: 100vh;
 }
 
 .header {
@@ -46,7 +47,7 @@ body {
 
 .title {
   font-size: 4.2em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1em;
   width: min-content;
   margin: 1rem 0;
@@ -62,7 +63,7 @@ body {
 
 .subTitle {
   font-size: 2.2em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .contact {
@@ -89,7 +90,7 @@ body {
   margin-bottom: 1rem;
   background-color: #000000;
   padding: 0.75rem;
-  color: #c09dc6;
+  color: #e4c4e9;
 }
 
 .section > .divider {
@@ -100,7 +101,7 @@ body {
 
 .sectionTitle {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .projectDetails > * {
