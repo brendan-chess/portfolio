@@ -19,6 +19,7 @@ body {
   background-size: 400% 400%;
   background-repeat: no-repeat;
   animation: gradient 30s ease infinite;
+  background-color: #000000;
 }
 
 @keyframes gradient {
@@ -85,15 +86,19 @@ body {
   margin: 1rem 0;
 }
 
+.projectDivider {
+  margin: 1.5rem 0;
+}
+
 .section {
   margin-bottom: 1rem;
   background-color: #000000;
   padding: 0.75rem;
-  color: #e4c4e9;
+  color: #e8d5eb;
 }
 
 .section > .divider {
-  margin: 0.75rem 0 0.5rem 0;
+  /* margin: 0.75rem 0 0.5rem 0; */
   background-color: #c0a1c4;
   width: 100%;
 }
@@ -114,6 +119,7 @@ body {
 .projectDetails a {
   color: inherit;
   display: block;
+  width: fit-content;
 }
 
 .projectDetails > a:first-child {
@@ -172,7 +178,7 @@ body {
 
   .projectImages {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .projectImages > div {

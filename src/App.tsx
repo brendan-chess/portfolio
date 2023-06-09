@@ -4,9 +4,12 @@ import gitHub from "./images/github.png";
 import instagram from "./images/instagram.png";
 import linkedIn from "./images/linkedin.png";
 import email from "./images/email.png";
-import minesweeperLanding from "./images/minesweeper_landing.png";
-import minesweeperEasy from "./images/minesweeper_easy.png";
-import minesweeperMedium from "./images/minesweeper_medium.png";
+// import minesweeperLanding from "./images/minesweeper_landing.png";
+// import minesweeperEasy from "./images/minesweeper_easy.png";
+// import minesweeperMedium from "./images/minesweeper_medium.png";
+import weather1 from "./images/weather1.png";
+import weather2 from "./images/weather2.png";
+import weather3 from "./images/weather3.png";
 import rtHome from "./images/rt_home.png";
 import rtMenu from "./images/rt_menu.png";
 import rtCart from "./images/rt_cart.png";
@@ -42,7 +45,9 @@ function App() {
         <div className={styles.section}>
           <div className={styles.sectionTitle}>My Tech Stack</div>
           <div className={styles.divider} />
-          <div>React, TypeScript</div>
+          <div>
+            TypeScript, React/Next.js, Tailwind CSS, Prisma, MongoDB/Firebase
+          </div>
         </div>
 
         <div className={styles.section}>
@@ -62,9 +67,50 @@ function App() {
       </div>
 
       <div className={styles.section}>
-        <div className={styles.sectionTitle}>My Projects:</div>
+        <div className={styles.sectionTitle}>My Projects</div>
 
         <div className={styles.divider} />
+
+        <div className={styles.project}>
+          <div className={styles.projectDetails}>
+            <a
+              href="https://weather-dashboard-a8m5.vercel.app/"
+              target="_blank"
+            >
+              Weather Dashboard
+            </a>
+            <div>
+              Tech Stack: Next.js, TypeScript, Tailwind CSS, Prisma, MongoDB
+            </div>
+            <div>
+              About: Since I have family living all over the country, I wanted
+              to create an application that would enable me to quickly check the
+              weather in multiple different cities at once. This project helped
+              me learn Next.js and Tailwind CSS. I collected data for US cities
+              into a database on MongoDB and connected my app to it with Prisma.
+              Live weather data is sourced from WeatherAPI.com.
+            </div>
+            <a
+              href="https://github.com/brendan-chess/weather-dashboard"
+              target="_blank"
+            >
+              View on GitHub
+            </a>
+          </div>
+          <div className={styles.projectImages}>
+            <div>
+              <img src={weather1} />
+            </div>
+            <div>
+              <img src={weather2} />
+            </div>
+            <div>
+              <img src={weather3} />
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.divider} ${styles.projectDivider}`} />
 
         <div className={styles.project}>
           <div className={styles.projectDetails}>
@@ -101,7 +147,7 @@ function App() {
           </div>
         </div>
 
-        <div className={styles.divider} />
+        {/* <div className={styles.divider} />
 
         <div className={styles.project}>
           <div className={styles.projectDetails}>
@@ -135,7 +181,7 @@ function App() {
               <img src={minesweeperMedium} />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
